@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8C8DC;
+    font-family: sans-serif;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #292929;
+    margin-top: 100px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: large;
+    cursor: pointer;
+    background-color: #a6a3f8;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+    color: rgb(237, 237, 132);
+}
+
+button:hover {
+    background-color: #e1a9e4;
+}
+
+#yesButton {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px #f3adfd;
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #f3adfd;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px #f3adfd;
+    }
+}
